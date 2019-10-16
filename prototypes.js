@@ -1,10 +1,10 @@
-//====== Pseudoclasses Recap! =======//
+//====== Prototypes Recap! =======//
 
 
 
 
 
-//====== Pseudoclass Challenge! =======//
+//====== Prototypes Challenge! =======//
 // 1- Create a Vehicle pseudoclass that has a method of info().
 // 2- Create a Car pseudoclass that inherets Vehicle. Add a method of drive(). Add some relevant properties.
 // 3- Create a Tesla pseudoclass that inherets Car. Add some relevant properties.
