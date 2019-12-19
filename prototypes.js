@@ -46,7 +46,17 @@ const eagle = new Bird({
   canFly: true,
 });
 
-
+const penguin = new Bird({
+  name: "Emperor Penguin",
+  size: "Smallish",
+  weight: "Quite Heavy",
+  habitat: "Antarctica",
+  color: "Black, White, & Yellow",
+  food: "Fish",
+  sound: "Noot Noot",
+  wingspan: "75 Centimeters",
+  canFly: false
+});
 
 //====== Prototypes Challenge! =======//
 // 1- Create a Vehicle pseudoclass that has a method of info().
