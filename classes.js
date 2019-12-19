@@ -74,3 +74,42 @@ console.log(penguin.eat());
 
 
 //====== Classes Refactor! =======//
+class Vehicle {
+  constructor(attr) {
+    this.name = attr.name;
+    this.model = attr.model;
+    this.color = attr.color;
+    this.year = attr.year;
+    this.topSpeed = attr.topSpeed;
+  }
+  ad() {
+    return `${this.name}: ${this.model}, ${this.color}`;
+  }
+}
+class Car extends Vehicle {
+  constructor(attr) {
+    super(attr);
+  }
+}
+class Tesla extends Car {
+  constructor(attr) {
+    super(attr);
+    this.chargingSpeed = attr.chargingSpeed;
+  }
+}
+class Truck extends Vehicle {
+  constructor(attr) {
+    super(attr);
+    this.wheelsCount = attr.wheelsCount;
+  }
+}
+const modelX = new Tesla({
+  name: "Tesla",
+  model: "Model X",
+  topSpeed: "290 kpm",
+  color: "Red",
+  chargingSpeed: "3hrs",
+  year: 2018
+});
+console.log(modelX);
+console.log(modelX.ad());
