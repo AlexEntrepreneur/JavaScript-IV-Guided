@@ -58,6 +58,17 @@ const penguin = new Bird({
   canFly: false
 });
 
+console.log(eagle);
+console.log(penguin);
+console.log(eagle.fly());
+console.log(eagle.speak());
+console.log(eagle.eat());
+console.log(penguin.fly());
+console.log(penguin.speak());
+console.log(penguin.eat());
+
+
+
 //====== Prototypes Challenge! =======//
 // 1- Create a Vehicle pseudoclass that has a method of info().
 // 2- Create a Car pseudoclass that inherets Vehicle. Add a method of drive(). Add some relevant properties.
