@@ -113,3 +113,39 @@ const modelX = new Tesla({
 });
 console.log(modelX);
 console.log(modelX.ad());
+
+//====== Practical Example ======//
+class User {
+  constructor(name, email, age) {
+    this.name = name;
+    this.email = email;
+    this.age = age;
+    this.isAdmin = false;
+  }
+
+  checkAdmin() {
+    return `${this.name}: is admin ${this.isAdmin}`;
+  }
+}
+
+class Admin extends User {
+  constructor(name, email, age) {
+    super(name, email, age);
+    this.isAdmin = true;
+  }
+}
+
+const jeff = new User('Jeff', 'jeff@email.com', 34);
+const sara = new User('Sara', 'sara@email.com', 34);
+const amy = new Admin("Amy", "amy@email.com", 34);
+
+console.log(jeff);
+console.log(amy);
+console.log(sara);
+console.log(jeff.checkAdmin());
+console.log(amy.checkAdmin());
+console.log(sara.checkAdmin());
+
+
+
+
