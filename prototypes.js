@@ -44,7 +44,7 @@ const eagle = new Bird({
   sound: "Eaaaak",
   wingspan: "2 Meters",
   canFly: true,
-})
+});
 
 
 
